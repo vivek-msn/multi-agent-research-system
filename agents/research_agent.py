@@ -10,4 +10,4 @@ class ResearchAgent(BaseAgent):
         )
 
     def execute(self, task: str) -> str:
-        return f"{self.name} is researching: {task}"
+        return self.generate_response(task)

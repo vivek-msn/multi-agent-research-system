@@ -35,15 +35,26 @@
 
 # print("Result:", result)
 
-from agents.writer_agent import WriterAgent
+# from agents.writer_agent import WriterAgent
 
-writer_agent = WriterAgent()
+# writer_agent = WriterAgent()
 
-print("\nAgent Name:", writer_agent.name)
-print("Agent Role:", writer_agent.role)
+# print("\nAgent Name:", writer_agent.name)
+# print("Agent Role:", writer_agent.role)
 
-result = writer_agent.execute(
-    "Prepare a report on the AI chatbot market"
+# result = writer_agent.execute(
+#     "Prepare a report on the AI chatbot market"
+# )
+
+# print("Result:", result)
+
+from agents.research_agent import ResearchAgent
+
+research_agent = ResearchAgent()
+
+result = research_agent.execute(
+    "Research the current Generative AI market and explain its major trends."
 )
 
-print("Result:", result)
+print("\nResearch Result:")
+print(result)
