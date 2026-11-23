@@ -48,13 +48,24 @@
 
 # print("Result:", result)
 
-from agents.research_agent import ResearchAgent
+# from agents.research_agent import ResearchAgent
 
-research_agent = ResearchAgent()
+# research_agent = ResearchAgent()
 
-result = research_agent.execute(
-    "Research the current Generative AI market and explain its major trends."
+# result = research_agent.execute(
+#     "Research the current Generative AI market and explain its major trends."
+# )
+
+# print("\nResearch Result:")
+# print(result)
+
+from agents.competitor_agent import CompetitorAgent
+
+competitor_agent = CompetitorAgent()
+
+result = competitor_agent.execute(
+    "Analyze the major competitors in the AI chatbot market. Compare their strengths and weaknesses."
 )
 
-print("\nResearch Result:")
+print("\nCompetitor Analysis:")
 print(result)

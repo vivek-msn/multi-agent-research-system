@@ -10,4 +10,4 @@ class CompetitorAgent(BaseAgent):
         )
 
     def execute(self, task:str) -> str:
-            return f"{self.name} is analyzing competitors: {task}"
+            return self.generate_response(task)
